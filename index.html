@@ -93,7 +93,6 @@
 <body>
   <main class="page">
     <header>
-      <p class="eyebrow">SAGA · TyG/HDL-C model</p>
       <h1>Screening for Asymptomatic<br>Coronary Atherosclerosis</h1>
       <p class="intro">Estimate the probability of coronary artery calcium presence (CAC &gt;0) in asymptomatic adults using the final seven-predictor model.</p>
       <p class="caution">Research use only. This internally validated calculator is not intended for clinical use or use as a medical device.</p>
@@ -113,26 +112,7 @@
             <p id="age-error" class="error" hidden></p>
           </div>
 
-          <fieldset class="labs">
-            <legend class="field-title">Laboratory values</legend>
-            <p class="small muted">Use mmol/L for all three values. Glucose must be fasting plasma glucose.</p>
-            <div class="field">
-              <label for="triglycerides" class="lab-label"><span>Triglycerides</span><span class="unit">mmol/L</span></label>
-              <input id="triglycerides" name="triglycerides" type="number" inputmode="decimal" min="0" step="any" placeholder="Enter triglycerides" required aria-describedby="triglycerides-error">
-              <p id="triglycerides-error" class="error" hidden></p>
-            </div>
-            <div class="field">
-              <label for="glucose" class="lab-label"><span>Fasting plasma glucose</span><span class="unit">mmol/L</span></label>
-              <input id="glucose" name="glucose" type="number" inputmode="decimal" min="0" step="any" placeholder="Enter fasting glucose" required aria-describedby="glucose-error">
-              <p id="glucose-error" class="error" hidden></p>
-            </div>
-            <div class="field">
-              <label for="hdl" class="lab-label"><span>HDL cholesterol</span><span class="unit">mmol/L</span></label>
-              <input id="hdl" name="hdl" type="number" inputmode="decimal" min="0" step="any" placeholder="Enter HDL cholesterol" required aria-describedby="hdl-error">
-              <p id="hdl-error" class="error" hidden></p>
-            </div>
-            <p id="laboratory-error" class="error" hidden></p>
-          </fieldset>
+
 
           <fieldset class="factors">
             <legend>Medical and lifestyle factors</legend>
@@ -171,6 +151,27 @@
                 <label class="choice"><input type="radio" name="everSmoker" value="1"><span>Yes</span></label>
               </div>
             </div>
+          </fieldset>
+
+          <fieldset class="labs">
+            <legend class="field-title">Laboratory values</legend>
+            <p class="small muted">Use mmol/L for all three values. Glucose must be fasting plasma glucose.</p>
+            <div class="field">
+              <label for="triglycerides" class="lab-label"><span>Triglycerides</span><span class="unit">mmol/L</span></label>
+              <input id="triglycerides" name="triglycerides" type="number" inputmode="decimal" min="0" step="any" placeholder="Enter triglycerides" required aria-describedby="triglycerides-error">
+              <p id="triglycerides-error" class="error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="glucose" class="lab-label"><span>Fasting plasma glucose</span><span class="unit">mmol/L</span></label>
+              <input id="glucose" name="glucose" type="number" inputmode="decimal" min="0" step="any" placeholder="Enter fasting glucose" required aria-describedby="glucose-error">
+              <p id="glucose-error" class="error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="hdl" class="lab-label"><span>HDL cholesterol</span><span class="unit">mmol/L</span></label>
+              <input id="hdl" name="hdl" type="number" inputmode="decimal" min="0" step="any" placeholder="Enter HDL cholesterol" required aria-describedby="hdl-error">
+              <p id="hdl-error" class="error" hidden></p>
+            </div>
+            <p id="laboratory-error" class="error" hidden></p>
           </fieldset>
 
           <div class="actions">
@@ -244,8 +245,7 @@ Probability = 1 / [1 + exp(−LP)]</pre>
       </section>
     </div>
     <footer>
-      <p>Calculations run in your browser. This page does not send or save your entries.<br>Final seven-predictor TyG/HDL-C model · EJPC project</p>
-      <p>Design reference: <a href="https://boonsengyeoh.github.io/Screening-for-Asymptomatic-Coronary-Atherosclerosis-SAGA-/" target="_blank" rel="noopener noreferrer">original SAGA calculator</a></p>
+      <p>Calculations run in your browser. This page does not send or save your entries.</p>
     </footer>
   </main>
 
