@@ -15,8 +15,8 @@
     header { text-align:center; max-width:980px; margin:0 auto 28px; }
     .eyebrow { display:inline-block; margin:0 0 12px; padding:5px 12px; border:1px solid #c8dade; border-radius:30px; color:var(--teal-dark); font-size:.8rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; }
     h1 { font-size:clamp(1.85rem,4vw,2.85rem); line-height:1.14; letter-spacing:-.035em; margin:0 0 16px; }
-    header .intro { max-width:790px; margin:0 auto 12px; color:#3d4c53; }
-    .caution { max-width:860px; margin:0 auto; color:#793d32; font-size:.875rem; font-weight:600; }
+    header .intro { text-align:justify; max-width:790px; margin:0 auto 12px; color:#3d4c53; }
+    .caution { text-align:justify; max-width:860px; margin:0 auto; color:#793d32; font-size:.875rem; font-weight:600; }
     .layout { display:grid; grid-template-columns:minmax(0,1.13fr) minmax(0,1fr); gap:22px; align-items:start; }
     .card { background:white; border:1px solid var(--line); border-radius:11px; box-shadow:0 7px 24px #273b4510; padding:26px; }
     h2 { font-size:1.2rem; line-height:1.3; letter-spacing:-.025em; margin:0 0 8px; }
@@ -94,7 +94,7 @@
   <main class="page">
     <header>
       <h1>Screening for Asymptomatic<br>Coronary Atherosclerosis</h1>
-      <p class="intro">An online screening calculator estimating the probability of coronary artery calcium presence in asymptomatic adults.</p>
+      <p class="intro">An online screening calculator estimating the probability of coronary artery calcium (CAC) presence in asymptomatic adults.</p>
       <p class="caution">CAUTION: Please note that this calculator version website is not intended as a medical device as defined by the medical device regulations, thus not intended for clinical use.</p>
     </header>
 
@@ -191,7 +191,7 @@
             <p class="small muted" id="pending-description">No probability is calculated until all seven predictors are known. The laboratory predictor requires triglycerides, fasting glucose and HDL cholesterol.</p>
           </div>
           <div id="result" hidden>
-            <span class="result-label">Predicted probability of CAC score more than 0</span>
+            <span class="result-label">Predicted probability of CAC above 0</span>
             <output id="probability" aria-label="Predicted probability of CAC greater than zero"></output>
             <span id="classification"></span>
             <p id="result-meaning" class="small"></p>
@@ -211,7 +211,7 @@
           </div>
           <p class="definition"><strong>Sensitivity:</strong> Among 100 people who truly have CAC &gt;0, about 92 are classified screen-positive; about 8 are missed.</p>
           <p class="definition"><strong>Specificity:</strong> Among 100 people who have CAC = 0, about 41 are classified screen-negative; about 59 are classified screen-positive.</p>
-          <p class="small muted">Screen-positive means the model meets the study's CAC-testing threshold. Screen-negative does not exclude CAC. Classification uses the unrounded probability.</p>
+          <p class="small muted">Screen-positive means the model meets the study's CAC-testing threshold. Screen-negative does not exclude CAC presence. Classification uses the unrounded probability.</p>
           <p class="validation-note">These operating characteristics come from the development cohort of 637 participants using saved final predictions: 315/343 CAC-positive and 121/294 CAC-zero participants correctly classified. They are not bootstrap optimism-corrected sensitivity or specificity, and external validation has not been established.</p>
         </section>
 
