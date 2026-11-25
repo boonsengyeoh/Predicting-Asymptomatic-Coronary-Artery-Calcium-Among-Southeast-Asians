@@ -94,8 +94,8 @@
   <main class="page">
     <header>
       <h1>Screening for Asymptomatic<br>Coronary Atherosclerosis</h1>
-      <p class="intro">Estimate the probability of coronary artery calcium presence (CAC &gt;0) in asymptomatic adults using the final seven-predictor model.</p>
-      <p class="caution">Research use only. This internally validated calculator is not intended for clinical use or use as a medical device.</p>
+      <p class="intro">An online screening calculator estimating the probability of coronary artery calcium presence in asymptomatic adults.</p>
+      <p class="caution">CAUTION: Please note that this calculator version website is not intended as a medical device as defined by the medical device regulations, thus not intended for clinical use.</p>
     </header>
 
     <noscript><p>JavaScript must be enabled to use this calculator. No prediction is available while JavaScript is disabled.</p></noscript>
@@ -183,8 +183,7 @@
       </section>
 
       <section class="card result-card" aria-labelledby="result-heading">
-        <h2 id="result-heading">Estimated result</h2>
-        <p class="muted small">Probability of prevalent CAC &gt;0</p>
+        <h2 id="result-heading">Result</h2>
         <div class="result-panel" aria-live="polite" aria-atomic="true">
           <div id="pending">
             <div class="pending-icon" aria-hidden="true">—</div>
@@ -192,11 +191,10 @@
             <p class="small muted" id="pending-description">No probability is calculated until all seven predictors are known. The laboratory predictor requires triglycerides, fasting glucose and HDL cholesterol.</p>
           </div>
           <div id="result" hidden>
-            <span class="result-label">Predicted probability</span>
+            <span class="result-label">Predicted probability of CAC score more than 0</span>
             <output id="probability" aria-label="Predicted probability of CAC greater than zero"></output>
             <span id="classification"></span>
             <p id="result-meaning" class="small"></p>
-            <p class="small muted">This is a screening classification, not a diagnosis. It estimates existing CAC presence, not future cardiovascular-event risk.</p>
             <dl class="derived">
               <div><dt>Calculated TyG index</dt><dd id="tyg-value"></dd></div>
               <div><dt>Calculated TyG/HDL-C</dt><dd id="ratio-value"></dd></div>
